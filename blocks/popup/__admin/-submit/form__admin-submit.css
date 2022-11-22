@@ -1,0 +1,10 @@
+.form__admin-submit {
+  margin: 18px 0 0;
+  border: 0;
+  background-color: black;
+  border-radius: 2px;
+}
+
+.form__admin-submit:hover {
+  opacity: 0.8;
+}

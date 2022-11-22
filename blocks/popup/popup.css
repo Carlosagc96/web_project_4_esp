@@ -1,0 +1,20 @@
+.popup {
+  margin: -9px;
+  max-width: 880px;
+}
+
+.popup button img {
+  position: absolute;
+  height: 40px;
+  left: 935px;
+  top: 157px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .popup button img {
+    height: 26px;
+    left: 82.69%;
+    right: 9.18%;
+    top: 91px;
+  }
+}

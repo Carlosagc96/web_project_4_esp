@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Around</title>
+    <link rel="stylesheet" href="pages/index.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <img class="header__logo" src="./images/logo.png" alt="Logo" />
+        <div class="header__line"></div>
+      </header>
+      <main class="main">
+        <section class="profile">
+          <div class="profile__user">
+            <img
+              class="profile__user-img"
+              src="./images/profile.png"
+              alt="Profile"
+            />
+            <div class="profile__user-info">
+              <div class="profile__user-info-name">
+                <h1 class="profile__title">Jacques Cousteau</h1>
+                <button type="button" id="editButton">
+                  <img src="./images/Edit Button.png" alt="Editar" />
+                </button>
+              </div>
+              <p class="profile__text">Explorador</p>
+            </div>
+          </div>
+          <button><img src="./images/Add Button.png" alt="Añadir" /></button>
+        </section>
+        <section class="popup popup_visible">
+          <button type="button" id="popup_close">
+            <img src="./images/Close-Icon.png" alt="Cerrar" />
+          </button>
+          <div class="popup__container">
+            <form action="" class="form__admin">
+              <h3 class="form__admin-title">Edit profile</h3>
+              <fieldset class="form__admin-container">
+                <input
+                  type="text"
+                  class="form__admin-container-item-title"
+                  value="Jacques Cousteau"
+                />
+              </fieldset>
+              <fieldset class="form__admin-container">
+                <input
+                  type="text"
+                  class="form__admin-container-item-subtitle"
+                  value="Explorador"
+                />
+              </fieldset>
+              <fieldset class="form__admin-submit">
+                <button type="submit" class="form__admin-submit-button">
+                  Guardar
+                </button>
+              </fieldset>
+            </form>
+          </div>
+        </section>
+        <section class="elements">
+          <div class="elements__group">
+            <img src="./images/yosemite.png" alt="Yosemite" />
+            <div class="elements__group-info">
+              <h1>Valle de Yosemite</h1>
+              <p>♡</p>
+            </div>
+          </div>
+          <div class="elements__group">
+            <img src="./images/louise.png" alt="Louise" />
+            <div class="elements__group-info">
+              <h1>Lago Louise</h1>
+              <p>♡</p>
+            </div>
+          </div>
+          <div class="elements__group">
+            <img src="./images/calvas.png" alt="Calvas" />
+            <div class="elements__group-info">
+              <h1>Montañas Calvas</h1>
+              <p>♡</p>
+            </div>
+          </div>
+          <div class="elements__group">
+            <img src="./images/latemar.png" alt="Latemar" />
+            <div class="elements__group-info">
+              <h1>Latemar</h1>
+              <p>♡</p>
+            </div>
+          </div>
+          <div class="elements__group">
+            <img src="./images/vanoise.png" alt="Vanoise" />
+            <div class="elements__group-info">
+              <h1>Vanoise Nationa...</h1>
+              <p>♡</p>
+            </div>
+          </div>
+          <div class="elements__group">
+            <img src="./images/braies.png" alt="Braies" />
+            <div class="elements__group-info">
+              <h1>Lago di Braies</h1>
+              <p>♡</p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <p>© 2022 Alrededor de los EEUU</p>
+      </footer>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>

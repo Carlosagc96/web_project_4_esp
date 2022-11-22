@@ -1,0 +1,17 @@
+.form__admin-submit-button {
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+}
+
+.form__admin-submit-button[type="submit"] {
+  background-color: #000;
+}

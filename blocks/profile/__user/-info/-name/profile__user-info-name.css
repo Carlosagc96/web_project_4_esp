@@ -1,0 +1,23 @@
+.profile__user-info-name {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-bottom: 13px;
+}
+
+.profile__user-info-name button {
+  margin-left: 18px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .profile__user-info-name {
+    margin-bottom: 14px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .profile__user-info-name button {
+    margin-left: 10px;
+    width: 18px;
+  }
+}
