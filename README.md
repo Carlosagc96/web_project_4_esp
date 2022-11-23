@@ -2,15 +2,23 @@
 
 ### Descripción general
 
-* Figma
-* Imágenes
+- Introducción
+- Próximamente
 
-**Figma**
+**Introducción**
 
-* [Enlace al proyecto en Figma](https://www.figma.com/file/LDMgqWesKpQkIwhOfEBuTS/WEB%2C-Sprint-5%3A-Around-The-U.S.-%7C-desktop-%2B-mobile?node-id=0%3A1)
+Proyecto del sprint 4 de Practicum usando HTML, CSS y JavaScript. Contiene una sola página web dividida en 4 distintos bloques y uso de media query para pantalla de 320px. Se usan metodologías tales como:
 
-**Imágenes**
+- Display Flex y Grid
+- Media Query
+- Funciones
 
-A la hora de trabajar, debes optar por exportar las imágenes directamente desde Figma; te recomendamos hacerlo para practicar más. No olvides optimizarlas [aquí](https://tinypng.com/), para que tu proyecto cargue más rápido. 
+**Próximamente**
 
-¡Esperamos que te diviertas con JavaScript!
+Los siguientes procedimientos a realizar para mejorar el contenido y visualización de la página son:
+
+- Agregar media query para tamaño de pantalla de 768px.
+- Añadir nuevos sitios turisticos en la seccion de elements.
+- Agregar efectos hover a las imagenes.
+
+¡Gracias por su atención!
