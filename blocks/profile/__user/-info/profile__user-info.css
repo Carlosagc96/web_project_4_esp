@@ -3,14 +3,14 @@
 }
 
 .profile__user-info h1 {
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-weight: 500;
   font-size: 42px;
   line-height: 48px;
 }
 
 .profile__user-info p {
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
