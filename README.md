@@ -16,7 +16,7 @@ Proyecto del sprint 4 de Practicum usando HTML, CSS y JavaScript. Contiene una s
 
 **Enlace**
 
-- [Enlace al Proyecto 3](https://carlosagc96.github.io/web_project_4_esp/)
+- [Enlace al Proyecto 4](https://carlosagc96.github.io/web_project_4_esp/)
 
 **Próximamente**
 
