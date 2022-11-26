@@ -1,5 +1,5 @@
-@import url(../script.js);
 @import url(../vendor/normalize.css);
+@import url(../script.js);
 @import url(../Fonts/font-inter.css);
 @import url(../blocks/page/page.css);
 @import url(../blocks/header/header.css);
@@ -10,6 +10,7 @@
 @import url(../blocks/profile/__user/-img/profile__user-img.css);
 @import url(../blocks/profile/__user/-info/profile__user-info.css);
 @import url(../blocks/profile/__user/-info/-name/profile__user-info-name.css);
+@import url(../blocks/overlay/overlay.css);
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/_visible/popup_visible.css);
 @import url(../blocks/popup/__container/popup__container.css);
@@ -23,4 +24,4 @@
 @import url(../blocks/elements/elements.css);
 @import url(../blocks/elements/__group/elements__group.css);
 @import url(../blocks/elements/__group/-info/elementos__group-info.css);
-@import url(../blocks/footer/footer.css); ;
+@import url(../blocks/footer/footer.css);
