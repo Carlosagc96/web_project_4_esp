@@ -1,0 +1,14 @@
+.elements__card-info-heart {
+  margin: 0;
+  min-width: 21px;
+  min-height: 19px;
+  background: url(../../../../../images/heart.png) center no-repeat;
+  border: none;
+  opacity: 1;
+  transition: opacity 0.2s linear;
+  cursor: pointer;
+}
+
+.elements__card-info-heart:hover {
+  opacity: 0.5;
+}

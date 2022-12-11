@@ -1,0 +1,16 @@
+.elements__card-removebtn {
+  margin: 0;
+  min-width: 18px;
+  min-height: 19.3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  opacity: 1;
+  transition: opacity 0.3s linear;
+  cursor: pointer;
+}

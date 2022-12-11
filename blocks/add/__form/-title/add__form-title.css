@@ -1,0 +1,24 @@
+.add__form-title {
+  font-size: 24px;
+  line-height: 1.2;
+  padding-left: 36px;
+  padding-top: 34px;
+  padding-bottom: 54px;
+  margin: 0;
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 900;
+  color: #000;
+  padding-left: 22px;
+  padding-top: 25px;
+  padding-bottom: 76px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .add__form-title {
+    font-size: 18px;
+    line-height: 1.22;
+    padding-left: 22px;
+    padding-top: 25px;
+    padding-bottom: 76px;
+  }
+}

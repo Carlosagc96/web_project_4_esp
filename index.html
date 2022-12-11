@@ -3,113 +3,146 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pages/index.css" />
     <title>Around</title>
-    <link rel="stylesheet" href="pages/index.css" />
   </head>
+
   <body>
     <div class="page">
       <header class="header">
         <img class="header__logo" src="./images/logo.png" alt="Logo" />
-        <div class="header__line"></div>
       </header>
+
       <main class="main">
         <section class="profile">
-          <div class="profile__user">
+          <img
+            src="./images/profile.png"
+            alt="Foto del perfil"
+            class="profile__avatar"
+          />
+          <div class="profile__info">
+            <h1 class="profile__info-name">Jacques Cousteau</h1>
+            <button class="profile__info-button">
+              <img
+                src="./images/Edit-Button.png"
+                alt="Editar Perfil"
+                class="profile__info-button-image"
+              />
+            </button>
+          </div>
+          <p class="profile__text">Explorador</p>
+          <button class="profile__add">
             <img
-              class="profile__user-img"
-              src="./images/profile.png"
-              alt="Profile"
+              src="./images/mas.png"
+              alt="Añadir"
+              class="profile__add-image"
             />
-            <div class="profile__user-info">
-              <div class="profile__user-info-name">
-                <h1 class="profile__title">Jacques Cousteau</h1>
-                <button type="button" id="editButton">
-                  <img src="./images/Edit-Button.png" alt="Editar" />
-                </button>
-              </div>
-              <p class="profile__text">Explorador</p>
-            </div>
-          </div>
-          <button><img src="./images/Add-Button.png" alt="Añadir" /></button>
-        </section>
-        <section class="popup popup_visible overlay">
-          <button type="button" id="popup_close">
-            <img src="./images/Close-Icon.png" alt="Cerrar" />
           </button>
-          <div class="form popup__container">
-            <form action="" class="form__admin">
-              <h3 class="form__admin-title">Edit profile</h3>
-              <fieldset class="form__admin-container">
-                <input
-                  type="text"
-                  class="form__admin-container-item-title"
-                  value="Jacques Cousteau"
-                />
-              </fieldset>
-              <fieldset class="form__admin-container">
-                <input
-                  type="text"
-                  class="form__admin-container-item-subtitle"
-                  value="Explorador"
-                />
-              </fieldset>
-              <fieldset class="form__admin-submit">
-                <button type="submit" class="form__admin-submit-button">
-                  Guardar
-                </button>
-              </fieldset>
-            </form>
-          </div>
         </section>
-        <section class="elements">
-          <div class="elements__group">
-            <img src="./images/yosemite.png" alt="Yosemite" />
-            <div class="elements__group-info">
-              <h1>Valle de Yosemite</h1>
-              <p>&#9825;</p>
-            </div>
-          </div>
-          <div class="elements__group">
-            <img src="./images/louise.png" alt="Louise" />
-            <div class="elements__group-info">
-              <h1>Lago Louise</h1>
-              <p>&#9825;</p>
-            </div>
-          </div>
-          <div class="elements__group">
-            <img src="./images/calvas.png" alt="Calvas" />
-            <div class="elements__group-info">
-              <h1>Montañas Calvas</h1>
-              <p>&#9825;</p>
-            </div>
-          </div>
-          <div class="elements__group">
-            <img src="./images/latemar.png" alt="Latemar" />
-            <div class="elements__group-info">
-              <h1>Latemar</h1>
-              <p>&#9825;</p>
-            </div>
-          </div>
-          <div class="elements__group">
-            <img src="./images/vanoise.png" alt="Vanoise" />
-            <div class="elements__group-info">
-              <h1>Vanoise Nationa...</h1>
-              <p>&#9825;</p>
-            </div>
-          </div>
-          <div class="elements__group">
-            <img src="./images/braies.png" alt="Braies" />
-            <div class="elements__group-info">
-              <h1>Lago di Braies</h1>
-              <p>&#9825;</p>
-            </div>
-          </div>
-        </section>
+
+        <section class="elements"></section>
       </main>
+
+      <section class="popup">
+        <form class="popup__form">
+          <button type="button" class="popup__form-button">
+            <img
+              src="./images/close-icon.png"
+              alt="Cerrar"
+              class="popup__form-button-image"
+            />
+          </button>
+          <h2 class="popup__title">Editar perfil</h2>
+          <fieldset class="popup__info">
+            <input
+              type="text"
+              class="popup__info-name"
+              placeholder="Nombre"
+              required
+            />
+            <input
+              type="text"
+              class="popup__info-text"
+              placeholder="Acerca de mí"
+              required
+            />
+            <button type="submit" class="popup__info-button">Guardar</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <section class="add">
+        <form class="add__form">
+          <button type="button" class="add__form-button popup__form-button">
+            <img
+              src="./images/close-icon.png"
+              alt="Cerrar"
+              class="add__form-button-image"
+            />
+          </button>
+          <h2 class="add__form-title">Nuevo Lugar</h2>
+          <fieldset class="add__form-info">
+            <input
+              type="text"
+              class="add__form-info-title"
+              placeholder="Título"
+              required
+            />
+            <input
+              type="text"
+              class="add__form-info-link"
+              placeholder="Enlace a la imagen"
+              required
+            />
+            <button type="submit" class="add__form-info-button">Crear</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <section class="bigimage">
+        <div class="bigimage__open">
+          <button type="button" class="bigimage__open-button add__form-button">
+            <img
+              src="./images/close-icon.png"
+              alt="Cerrar"
+              class="bigimage__open-button-image"
+            />
+          </button>
+          <img
+            src="https://code.s3.yandex.net/web-code/yosemite.jpg"
+            alt="Imagen grande"
+            class="bigimage__open-image"
+          />
+          <h2 class="bigimage__open-title">Valle de Yosemite</h2>
+        </div>
+      </section>
+
       <footer class="footer">
-        <p>&copy; 2022 Alrededor de los EEUU</p>
+        <p class="footer__copyright">&copy; 2022 Alrededor de los EEUU</p>
       </footer>
-      <script src="script.js"></script>
     </div>
+
+    <template id="element-template">
+      <div class="elements__card">
+        <img
+          src="https://code.s3.yandex.net/web-code/yosemite.jpg"
+          alt="Paisaje"
+          class="elements__card-image"
+        />
+        <button class="elements__card-removebtn">
+          <img
+            src="./images/Trash.png"
+            alt="Icono de un bote de basura"
+            class="elements__card-removebtn-image"
+          />
+        </button>
+        <div class="elements__card-info">
+          <h2 class="elements__card-info-name">Valle de Yosemite</h2>
+          <button class="elements__card-info-heart"></button>
+        </div>
+      </div>
+    </template>
+
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

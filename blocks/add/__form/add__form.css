@@ -1,0 +1,18 @@
+.add__form {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #fff;
+  min-width: 430px;
+  min-height: 330px;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgb(0 0 0 / 15%);
+  position: relative;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .add__form {
+    min-width: 282px;
+    min-height: 322px;
+  }
+}

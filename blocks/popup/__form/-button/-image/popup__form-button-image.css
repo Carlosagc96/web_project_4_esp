@@ -1,0 +1,11 @@
+.popup__form-button-image {
+  margin: 0;
+  min-width: 100%;
+  opacity: 1;
+  transition: opacity 0.3s linear;
+  cursor: pointer;
+}
+
+.popup__form-button-image:hover {
+  opacity: 0.6;
+}

@@ -1,27 +1,22 @@
 .profile {
-  max-width: 880px;
-  margin: 0 auto 50px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  padding: 36.25px 0 46.25px;
+  min-width: 880px;
+  display: grid;
+  grid-template-areas:
+    "avatar . . . . ."
+    "avatar info . . . add"
+    "avatar text . . . add"
+    "avatar . . . . .";
   justify-content: space-between;
-}
-
-.profile a :hover {
-  opacity: 0.6;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .profile {
-    margin: 0 auto 36px;
+    margin: 0;
+    min-width: 88.125%;
     display: flex;
     flex-direction: column;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .profile a {
-    width: 282px;
-    height: 50px;
+    align-items: center;
+    padding: 38.25px 0 36px;
   }
 }

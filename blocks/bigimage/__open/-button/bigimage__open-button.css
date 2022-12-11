@@ -1,0 +1,15 @@
+.bigimage__open-button {
+  min-width: 40px;
+  max-height: 40px;
+  top: -45px;
+  right: -45.5px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .bigimage__open-button {
+    min-width: 30px;
+    max-height: 30px;
+    top: -33px;
+    right: -33.5px;
+  }
+}
