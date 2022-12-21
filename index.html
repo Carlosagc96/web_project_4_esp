@@ -43,60 +43,76 @@
         <section class="elements"></section>
       </main>
 
-      <section class="popup">
-        <form class="popup__form">
-          <button type="button" class="popup__form-button">
-            <img
-              src="./images/close-icon.png"
-              alt="Cerrar"
-              class="popup__form-button-image"
-            />
-          </button>
+      <section class="popup" id="popup">
+        <form class="popup__form form" id="form-popup" novalidate>
           <h2 class="popup__title">Editar perfil</h2>
-          <fieldset class="popup__info">
-            <input
-              type="text"
-              class="popup__info-name"
-              placeholder="Nombre"
-              required
-            />
-            <input
-              type="text"
-              class="popup__info-text"
-              placeholder="Acerca de mí"
-              required
-            />
-            <button type="submit" class="popup__info-button">Guardar</button>
-          </fieldset>
+          <input
+            type="text"
+            id="name-input"
+            class="popup__info-name form-input-popup"
+            placeholder="Nombre"
+            minlength="2"
+            maxlength="40"
+            required
+          />
+          <span class="name-input-error message-span"></span>
+          <input
+            type="text"
+            id="profession"
+            class="popup__info-text form-input-popup"
+            placeholder="Acerca de mí"
+            minlength="2"
+            maxlength="200"
+            required
+          />
+          <span class="profession-error message-span"></span>
+          <button type="submit" class="popup__info-button button-active">
+            Guardar
+          </button>
         </form>
+        <button type="button" class="popup__form-button">
+          <img
+            src="./images/close-icon.png"
+            alt="Cerrar"
+            class="popup__form-button-image"
+          />
+        </button>
       </section>
 
       <section class="add">
-        <form class="add__form">
-          <button type="button" class="add__form-button">
-            <img
-              src="./images/close-icon.png"
-              alt="Cerrar"
-              class="add__form-button-image"
-            />
-          </button>
+        <form class="add__form form" novalidate>
           <h2 class="add__form-title">Nuevo Lugar</h2>
-          <fieldset class="add__form-info">
-            <input
-              type="text"
-              class="add__form-info-title"
-              placeholder="Título"
-              required
-            />
-            <input
-              type="text"
-              class="add__form-info-link"
-              placeholder="Enlace a la imagen"
-              required
-            />
-            <button type="submit" class="add__form-info-button">Crear</button>
-          </fieldset>
+          <input
+            type="text"
+            id="addphoto"
+            class="add__form-info-title form-input-photo"
+            placeholder="Título"
+            minlength="2"
+            maxlength="40"
+            required
+          />
+          <span class="addphoto-error message-span"></span>
+          <input
+            type="url"
+            id="url"
+            class="add__form-info-link form-input-photo"
+            placeholder="Enlace a la imagen"
+            minlength="2"
+            maxlength="200"
+            required
+          />
+          <span class="url-error message-span"></span>
+          <button type="submit" class="add__form-info-button button-active">
+            Crear
+          </button>
         </form>
+        <button type="button" class="add__form-button">
+          <img
+            src="./images/close-icon.png"
+            alt="Cerrar"
+            class="add__form-button-image"
+          />
+        </button>
       </section>
 
       <section class="bigimage">
@@ -144,5 +160,6 @@
     </template>
 
     <script src="./scripts/script.js"></script>
+    <script src="./scripts/validate.js"></script>
   </body>
 </html>

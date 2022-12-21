@@ -3,19 +3,19 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  position: absolute;
+  position: relative;
   cursor: pointer;
   min-width: 40px;
   max-height: 40px;
-  top: -44.28px;
-  right: -44.72px;
+  top: -190.28px;
+  right: 1.28px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .add__form-button {
     min-width: 26px;
     max-height: 26px;
-    top: -47.62px;
-    right: 7.38px;
+    top: -183.28px;
+    right: 1.28px;
   }
 }

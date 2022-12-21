@@ -60,6 +60,7 @@ const initialCards = [
     editPopup.classList.toggle("popup__open");
   });
 
+
   //Popup Button
   const editForm = document.querySelector(".popup__form");
 
@@ -150,3 +151,107 @@ const initialCards = [
     elementName.textContent = info.name;
     elementUrl.src = info.link;
   }
+
+//Open and Close Popup Form with Escape and click outside
+const openPopup =document.querySelector(".popup");
+const profileBtn =document.querySelector(".profile__info-button-image");
+const closePopup =document.querySelector(".popup__form-button");
+const popupForm = document.querySelector(".popup__form");
+const popupTitle = openPopup.querySelector(".popup__title");
+
+const popupBtn = document.querySelector(".popup__info-button");
+const popupInfoName =document.querySelector(".popup__info-name");
+const popupInfoText = document.querySelector(".popup__info-text");
+const profileInfoName = document.querySelector(".profile__info-name");
+const profileInfoText = document.querySelector(".profile__text");
+
+function  formAdd(open){
+    open.style.display = "flex";
+}
+
+function close(closed){
+    closed.style.display = "none";
+}
+
+function popupSave(evt){
+    evt.preventDefault();
+
+    close(openPopup);
+    profileInfoName.textContent = popupInfoName.value;
+    profileInfoText.textContent = popupInfoText.value;
+}
+function esc(evt){
+    if (evt.key === "Escape"){
+        close(openPopup);
+    }
+}
+
+openPopup.addEventListener("click", function (evt){
+    if (evt.target === popupForm || evt.target === popupInfoText ||  evt.target === popupInfoName || evt.target === popupTitle) {
+        formAdd(openPopup);
+    }
+    else {
+        close(openPopup);
+    }
+});
+
+document.addEventListener("keydown",  esc);
+
+profileBtn.addEventListener("click", () => {
+    formAdd(openPopup);
+} );
+closePopup.addEventListener("click", () =>{
+    close(openPopup);
+});
+popupBtn.addEventListener("click", popupSave);
+
+//Open and Close Images with Escape and click outside
+const bigImage = document.querySelector(".bigimage");
+const closeBigImage = document.querySelector(".bigimage__open-button-image");
+
+closeBigImage.addEventListener("click", function(){
+    close(bigImage);
+});
+
+bigImage.addEventListener("click", function (){
+    close(bigImage);
+});
+
+document.addEventListener("keydown", function (evento){
+    if (evento.key === "Escape"){
+
+        close(bigImage);
+    }
+});
+
+//Open and Close Add Image Form with Escape and click outside
+const openAdd =document.querySelector(".add");
+const profileAdd = document.querySelector(".profile__add-image");
+const closeAdd = document.querySelector(".add__form-button-image");
+const closeAddForm = openAdd.querySelector(".add__form");
+const addTitle = openAdd.querySelector(".add__form-title");
+
+const addFormTitle =document.querySelector(".add__form-info-title");
+const addFormLink = document.querySelector(".add__form-info-link");
+
+document.addEventListener("keydown", function (event){
+    if (event.key === "Escape") {
+        close(openAdd);
+    }
+});
+
+openAdd.addEventListener("click", function (evt){
+    if (evt.target === closeAddForm || evt.target === addTitle || evt.target === addFormTitle || evt.target === addFormLink){
+        formAdd(openAdd);
+    }
+    else {
+        close(openAdd);
+    }
+});
+
+profileAdd.addEventListener("click", () =>{
+    formAdd(openAdd);
+});
+closeAdd.addEventListener("click", () => {
+    close(openAdd);
+});

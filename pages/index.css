@@ -1,5 +1,4 @@
 @import url(../vendor/normalize.css);
-@import url(../scripts/script.js);
 @import url(../Fonts/font-inter.css);
 
 /*PAGE*/
@@ -70,3 +69,10 @@
 @import url(../blocks/elements/__card/-info/-heart/-active/elements__card-info-heart-active.css);
 @import url(../blocks/elements/__card/-removebtn/elements__card-removebtn.css);
 @import url(../blocks/elements/__card/-removebtn/-image/elements__card-removebtn-image.css);
+
+/*JAVASCRIPT NEW CLASS*/
+@import url(../blocks/popup/__valid/popup__valid.css);
+@import url(../blocks/popup/__active-error/popup__active-error.css);
+@import url(../blocks/button-active/button-active.css);
+@import url(../blocks/message-span/message-span.css);
+@import url(../blocks/popup/popup-close.css);
