@@ -210,17 +210,17 @@ const bigImage = document.querySelector(".bigimage");
 const closeBigImage = document.querySelector(".bigimage__open-button-image");
 
 closeBigImage.addEventListener("click", function(){
-    close(bigImage);
+  bigImage.classList.remove("bigimage__opened");
 });
 
 bigImage.addEventListener("click", function (){
-    close(bigImage);
+  bigImage.classList.remove("bigimage__opened");
 });
 
 document.addEventListener("keydown", function (evento){
     if (evento.key === "Escape"){
 
-        close(bigImage);
+      bigImage.classList.remove("bigimage__opened");
     }
 });
 
